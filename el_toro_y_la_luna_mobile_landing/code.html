@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<title>El Toro y La Luna — Cocina de Horno</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            surface: "#fcf9f2",
+            "surface-dim": "#dcdad3",
+            "inverse-primary": "#ccc5c1",
+            "secondary-fixed-dim": "#ffb4a2",
+            "tertiary-fixed": "#dee7b9",
+            "primary-container": "#1e1b19",
+            "on-primary-container": "#888380",
+            "tertiary-container": "#181e03",
+            outline: "#7e7570",
+            "on-error": "#ffffff",
+            secondary: "#9d422b",
+            "surface-container-lowest": "#ffffff",
+            "on-primary": "#ffffff",
+            "on-surface-variant": "#4d4540",
+            "surface-variant": "#e5e2db",
+            "on-tertiary-fixed": "#181e03",
+            "surface-container-highest": "#e5e2db",
+            "surface-container": "#f1eee7",
+            "error-container": "#ffdad6",
+            error: "#ba1a1a",
+            "secondary-container": "#fd8c6f",
+            "surface-tint": "#625d5b",
+            "tertiary-fixed-dim": "#c2cb9f",
+            "on-secondary-fixed-variant": "#7e2c16",
+            "inverse-surface": "#31312c",
+            "on-secondary-fixed": "#3c0800",
+            "on-surface": "#1c1c18",
+            "on-secondary-container": "#742510",
+            "on-primary-fixed-variant": "#4a4643",
+            "primary-fixed-dim": "#ccc5c1",
+            "surface-container-high": "#ebe8e1",
+            "on-secondary": "#ffffff",
+            "outline-variant": "#d0c4be",
+            "secondary-fixed": "#ffdbd2",
+            tertiary: "#000000",
+            background: "#fcf9f2",
+            "on-error-container": "#93000a",
+            primary: "#1c1c18",
+            "surface-container-low": "#f6f3ec",
+            "inverse-on-surface": "#f3f0e9",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#808860",
+            "primary-fixed": "#e9e1dd",
+            "on-tertiary-fixed-variant": "#434a28",
+            "on-primary-fixed": "#1e1b19",
+            "surface-bright": "#fcf9f2",
+            "on-background": "#1c1c18"
+          },
+          fontFamily: {
+            "title-md": ["Manrope", "sans-serif"],
+            "body-lg": ["Manrope", "sans-serif"],
+            "body-sm": ["Manrope", "sans-serif"],
+            "label-sm": ["Manrope", "sans-serif"],
+            "display-lg": ["Newsreader", "serif"],
+            "headline-sm": ["Newsreader", "serif"],
+            "headline-lg": ["Newsreader", "serif"],
+            "label-lg": ["Manrope", "sans-serif"],
+            "body-md": ["Manrope", "sans-serif"],
+            "headline-md": ["Newsreader", "serif"],
+            "display-lg-mobile": ["Newsreader", "serif"],
+            "headline-lg-mobile": ["Newsreader", "serif"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    @layer base {
+      html, body {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      body {
+        overscroll-behavior-y: none;
+        background-color: #fcf9f2;
+        color: #1c1c18;
+      }
+      .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+      .pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+    }
+    ::-webkit-scrollbar { display: none; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- CABECERA FIJA SUPERIOR -->
+<header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 pt-safe">
+<div class="h-14 px-4 flex items-center justify-between max-w-lg mx-auto">
+<div class="flex items-center gap-2.5">
+<img alt="Logo El Toro y La Luna" class="w-7 h-7 object-contain rounded-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClDC4yXM9HdvLiVa8JbQ-jMGNzPisPmCV4ucdUaji0HzfYZrCgMdWeCFat7i84juG5dNoToKvppRSQ_FWjyNRrw8rplXGYq9Ok4gxbaM_vve7VhbuDLbkOAgy8xMSP0Ka6h8l-IZylJSofPXTjle1qG3XgXhnPo3UaJmVXY39EMLevMNeZaZOh399NXmxlGNvApFYbq1InYVa5XPfHxKDI0fyZYJxtI_SVfM7nTXg5dvY7MXxbQ0wykHa7SjzyVn1C"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-lg leading-none tracking-tight font-medium text-on-surface">El Toro y La Luna</span>
+<span class="text-[10px] uppercase tracking-widest text-secondary font-semibold mt-0.5">Cocina de Horno · Oaxaca</span>
+</div>
+</div>
+<a class="px-3 py-1.5 bg-primary text-on-primary text-[11px] font-medium tracking-wider uppercase rounded-full hover:bg-secondary transition-colors" href="https://wa.me/529515168820?text=Hola,%20quisiera%20reservar%20una%20mesa" rel="noopener noreferrer" target="_blank">
+        Reservar
+      </a>
+</div>
+</header>
+<!-- CONTENIDO PRINCIPAL -->
+<main class="flex-1 flex flex-col w-full max-w-lg mx-auto pt-16 pb-24">
+<!-- 1. HERO EDITORIAL -->
+<section class="px-5 pt-8 pb-10 flex flex-col items-center text-center">
+<!-- Logo Oficial Centrado -->
+<div class="w-36 mb-6">
+<img alt="El Toro y La Luna — Cocina de Horno" class="w-full h-auto object-contain drop-shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7R4pPex6ugEZkmNQBpwsPk0sXrb6t3OCin8bWtqbVlqOxYzi3ejEULk3qm235wKhHGnKD1ZDAbuNnvfAW5P0RHgACR9rbkMe0P6xeI7qFr9LHo8BvUsdsGLd73Sgmh0Gxd6DSGYj6JZJjG2rZOHA_e1DF2j9QaQBa-uXquSKCAOZBYxcn2Mak_oXLfboU5IXv4hQzeqbdqUXwFrZtmYC9F8YCbtJOCAxb9tCtjOB8bC7drATKrqJrhkq7PZ9FfQIG"/>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/40 mb-3">
+<span class="material-symbols-outlined text-[14px] text-secondary">local_fire_department</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold text-on-surface-variant">Oaxaca de Juárez · Colón 612</span>
+</div>
+<h1 class="font-display-lg text-4xl text-on-surface font-normal tracking-tight leading-[1.15] mb-3">
+        El fuego, el tiempo y la masa madre.
+      </h1>
+<p class="font-headline-sm italic text-base text-on-surface-variant/90 max-w-xs mb-6">
+        Cocina artesanal de leña guiada por la paciencia en tres hornos de barro y piedra.
+      </p>
+<!-- Hero Portrait Card -->
+<div class="w-full relative rounded-xl overflow-hidden bg-surface-container shadow-md aspect-[4/5] mb-6">
+<img alt="Chef Miguel Arjona frente al horno napolitano con pizza de masa madre" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChkwM_SVo61EvJbBgAUACFNozjlJFtXI0sESyEHnVvEUt9AVyb6eXUbOAFiBfR9feeHgAvajCd8Fut3H3fCJgt2G59QIdhSGKIf_AVJauuugwE8LwVaFlU_UhfVKCm08rkkus7KrpTvLVIIonA9Ervzb0lJM2bVSAx4rswQDmrTZM1OP5uxQTa_akKpgE4KVGIjprunRmH7qpOD5XlDuHUKUKVSnvkYquYxIAkBz-_bak4BGuH9WcvVIGKhf7s7lv3"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-left text-white">
+<span class="inline-block px-2.5 py-0.5 bg-surface/90 text-on-surface text-[10px] font-semibold uppercase tracking-wider rounded mb-1.5 backdrop-blur-sm">
+            Fermentación Paciente de 72 Horas
+          </span>
+<p class="font-headline-sm text-xl text-white font-normal leading-snug drop-shadow">
+            Maestría pizzera napolitana con alma oaxaqueña.
+          </p>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="w-full grid grid-cols-2 gap-3">
+<a class="py-3 bg-primary text-on-primary text-xs font-semibold uppercase tracking-widest rounded-lg text-center shadow-sm hover:bg-secondary transition-colors flex items-center justify-center gap-1.5" href="#carta-editorial">
+<span class="material-symbols-outlined text-sm">restaurant_menu</span>
+          Ver Carta
+        </a>
+<a class="py-3 bg-surface-container text-on-surface border border-outline-variant/40 text-xs font-semibold uppercase tracking-widest rounded-lg text-center hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5" href="#galeria-fuego">
+<span class="material-symbols-outlined text-sm">photo_library</span>
+          El Arte del Fuego
+        </a>
+</div>
+</section>
+<!-- 2. RECONOCIMIENTO CAPUTO CUP 2025 -->
+<section class="px-5 py-4">
+<div class="bg-surface-container-high/60 border border-outline-variant/40 rounded-xl p-5 relative overflow-hidden">
+<div class="flex items-center gap-2 text-secondary mb-2">
+<span class="material-symbols-outlined text-base">workspace_premium</span>
+<span class="text-[10px] font-bold tracking-widest uppercase">Subcampeones Nacionales</span>
+</div>
+<h2 class="font-headline-sm text-2xl text-on-surface font-normal leading-tight mb-2">
+          2º Lugar de México en la Caputo Cup 2025
+        </h2>
+<p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+          La segunda mejor pizza de todo el país se elabora a puerta cerrada en Oaxaca. Clasificados oficiales para representar a México en el mundial de Nápoles, Italia.
+        </p>
+<div class="flex flex-wrap gap-1.5 text-[11px] text-on-surface-variant">
+<span class="px-2.5 py-1 bg-surface rounded-full border border-outline-variant/30 font-medium">Harina Caputo 00</span>
+<span class="px-2.5 py-1 bg-surface rounded-full border border-outline-variant/30 font-medium">Masa Madre 72h</span>
+<span class="px-2.5 py-1 bg-surface rounded-full border border-outline-variant/30 font-medium">Leña de Encino</span>
+</div>
+</div>
+</section>
+<!-- 3. LOS 3 HORNOS -->
+<section class="px-5 py-8">
+<div class="mb-4">
+<span class="text-[10px] uppercase font-bold tracking-widest text-secondary block mb-1">Nuestra Esencia</span>
+<h2 class="font-headline-lg-mobile text-3xl font-normal text-on-surface">Tres almas de calor</h2>
+<p class="text-xs text-on-surface-variant mt-1">Cada preparación cuenta con su propio horno, temperatura y tipo de leña.</p>
+</div>
+<!-- Imagen Destacada Horno Hallel -->
+<div class="w-full aspect-[16/10] rounded-xl overflow-hidden mb-4 relative shadow-sm">
+<img alt="Fuego vivo dentro del horno napolitano Hallel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs1-hRI6rn6rUk4MOQKNhiWClYbZd9KBE8MZUdOd1mWkPTvxNqVDuxj5sHlFs4GHj7dHodDpYEmqujXdMeZ_OmKRj1mIPbjjB_wioBgrTfIAXygolyFiAKA1e_zVh40gL_WYGUkhexm39E0nijTyNal6AFqziGhD-6t2ZaWgVjZ8qFKTuTMAYmBYKxVt7QRgxZa-Qygw3pcZVSv6B4widHnTBFyL9rGXHBTTZVdqMmw5QbCnIQfofFuKf9gDkaab6G"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-4">
+<div>
+<span class="text-white font-headline-sm text-lg block">Horno Hallel a 480°C</span>
+<span class="text-white/80 text-[11px]">Cocción fulminante en 90 segundos para un borde aireado y moteado.</span>
+</div>
+</div>
+</div>
+<!-- Fichas de los 3 Hornos -->
+<div class="space-y-2.5">
+<div class="p-3.5 bg-surface-container rounded-lg border border-outline-variant/30">
+<div class="flex justify-between items-baseline mb-0.5">
+<h3 class="font-headline-sm text-base text-on-surface font-medium">1. Horno Hallel</h3>
+<span class="text-secondary font-bold text-xs font-mono">480°C</span>
+</div>
+<span class="text-[10px] uppercase tracking-wider text-on-surface-variant/80 font-semibold block mb-1">Poder Napolitano</span>
+<p class="text-xs text-on-surface-variant leading-relaxed">Golpe térmico directo para pizzas alveoladas y crocantes con aromas tostados y masa viva.</p>
+</div>
+<div class="p-3.5 bg-surface-container rounded-lg border border-outline-variant/30">
+<div class="flex justify-between items-baseline mb-0.5">
+<h3 class="font-headline-sm text-base text-on-surface font-medium">2. Horno María</h3>
+<span class="text-secondary font-bold text-xs font-mono">220°C - 260°C</span>
+</div>
+<span class="text-[10px] uppercase tracking-wider text-on-surface-variant/80 font-semibold block mb-1">Cocción Lenta &amp; Calidez</span>
+<p class="text-xs text-on-surface-variant leading-relaxed">Dedicado a nuestras lasañas tradicionales al huevo de 6 horas de ragú y fondues burbujeantes.</p>
+</div>
+<div class="p-3.5 bg-surface-container rounded-lg border border-outline-variant/30">
+<div class="flex justify-between items-baseline mb-0.5">
+<h3 class="font-headline-sm text-base text-on-surface font-medium">3. Horno Ismael</h3>
+<span class="text-secondary font-bold text-xs font-mono">Brasa Viva</span>
+</div>
+<span class="text-[10px] uppercase tracking-wider text-on-surface-variant/80 font-semibold block mb-1">Cortes Angus &amp; Panadería</span>
+<p class="text-xs text-on-surface-variant leading-relaxed">Carbón vegetal y leña frutal para cortes selectos Angus y el pan rústico recién horneado de cada servicio.</p>
+</div>
+</div>
+</section>
+<!-- 4. MENÚ EN FORMATO CARTA EDITORIAL MÓVIL (SIN FOTOS, LIMPIO, TIPOGRAFÍA SOFISTICADA) -->
+<section class="px-5 py-8 bg-surface-container-low border-y border-outline-variant/30" id="carta-editorial">
+<div class="text-center mb-6">
+<span class="text-[10px] font-bold tracking-widest text-secondary uppercase block mb-1">Carta de la Casa</span>
+<h2 class="font-display-lg text-3xl font-normal text-on-surface">Cocina de Horno</h2>
+<p class="font-headline-sm italic text-xs text-on-surface-variant mt-1">Elaborado con insumos genuinos, embutidos artesanales y masa madre fermentada 72h.</p>
+</div>
+<!-- Selector de Pestañas de la Carta -->
+<div class="flex gap-2 overflow-x-auto no-scrollbar pb-2 mb-6 text-xs font-semibold">
+<button class="menu-tab px-3.5 py-1.5 rounded-full bg-primary text-on-primary whitespace-nowrap transition-colors" id="tab-pizzas" onclick="switchTab('pizzas')">
+          Pizzas Artesanales
+        </button>
+<button class="menu-tab px-3.5 py-1.5 rounded-full bg-surface border border-outline-variant/40 text-on-surface-variant whitespace-nowrap transition-colors" id="tab-estrellas" onclick="switchTab('estrellas')">
+          Especialidades Estrellas
+        </button>
+<button class="menu-tab px-3.5 py-1.5 rounded-full bg-surface border border-outline-variant/40 text-on-surface-variant whitespace-nowrap transition-colors" id="tab-calzones" onclick="switchTab('calzones')">
+          Calzones &amp; Alternativa
+        </button>
+<button class="menu-tab px-3.5 py-1.5 rounded-full bg-surface border border-outline-variant/40 text-on-surface-variant whitespace-nowrap transition-colors" id="tab-carnes" onclick="switchTab('carnes')">
+          Carnes Angus al Horno
+        </button>
+<button class="menu-tab px-3.5 py-1.5 rounded-full bg-surface border border-outline-variant/40 text-on-surface-variant whitespace-nowrap transition-colors" id="tab-pastas" onclick="switchTab('pastas')">
+          Pastas de la Casa
+        </button>
+<button class="menu-tab px-3.5 py-1.5 rounded-full bg-surface border border-outline-variant/40 text-on-surface-variant whitespace-nowrap transition-colors" id="tab-toasts" onclick="switchTab('toasts')">
+          Entradas &amp; Toasts
+        </button>
+<button class="menu-tab px-3.5 py-1.5 rounded-full bg-surface border border-outline-variant/40 text-on-surface-variant whitespace-nowrap transition-colors" id="tab-bebidas" onclick="switchTab('bebidas')">
+          Bebidas &amp; Cava
+        </button>
+</div>
+<!-- CONTENIDOS DE CADA CATEGORÍA (EDITORIAL CARTA TEXTO PURO) -->
+<!-- 4.1 PIZZAS -->
+<div class="menu-content space-y-4" id="content-pizzas">
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Margarita</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$280</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Salsa de tomate casera, pecorino romano, albahaca fresca, mozzarella fresca y aceite de oliva extra virgen.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Serrano y Arúgula</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$310</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Salsa de tomate pomodoro, mix de quesos madurados, jamón serrano reserva, arúgula silvestre, aceite de oliva y lluvia de queso parmesano.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Blanca de Quesos</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$290</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Crema de ajo tostado, mozzarella hilada, queso gouda, provolone ahumado, queso de cabra artesanal y queso azul.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">La Carne y el Hongo</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$310</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Crema de ajo, mozzarella, provolone, láminas de roast beef horneado, cebolla asada y champiñones al fuego.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Chistorra y Papa</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$310</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Salsa de tomate, romero de jardín, provolone fundido, mozzarella, chistorra artesanal y papas asadas a la leña.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Camarón Especial</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$340</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Salsa especial reducida de camarón, queso provolone, perejil fresco, camarones al ajillo y tomates cherry.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Diavola</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$280</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Pomodoro, parmesano reggiano, mozzarella fresca y auténtico salami picante artesanal.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Tomate y Cabra</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$275</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Salsa de tomate natural, queso de cabra suave de granja local, tomate cherry dulce y aceite de oliva virgen extra.</p>
+</div>
+<div class="pb-2">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Capricciosa</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$285</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Salsa de tomate, parmesano, mozzarella, jamón de pierna natural, aceitunas negras, poro encurtido y champiñones.</p>
+</div>
+</div>
+<!-- 4.2 ESTRELLAS (RELLENAS DE QUESO) -->
+<div class="menu-content space-y-4 hidden" id="content-estrellas">
+<div class="p-3 bg-surface rounded-lg border border-outline-variant/30 mb-2">
+<span class="text-[10px] font-bold text-secondary uppercase tracking-widest block mb-0.5">Especialidad de la Casa</span>
+<p class="text-xs text-on-surface-variant">Pizzas en forma de estrella de 8 puntas rellenas de queso fundente y coronadas con ensalada fresca aliñada al centro.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Estrella de Serrano</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$350</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Puntas de masa madre rellenas de queso cremoso, jamón serrano curado al centro y ensalada fresca con vinagreta artesanal.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Estrella de Roast Beef</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$345</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Puntas rellenas de queso provolone y gouda, láminas tiernas de roast beef horneado a la leña y ensalada aliñada con reducción balsámica.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Estrella de Salami</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$345</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Bordes con corazón de quesos fundidos, rodajas de salami selecto y hojas verdes frescas maceradas con vinagreta cítrica.</p>
+</div>
+<div class="pb-2">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Estrella de Chistorra</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$345</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Puntas rellenas de queso, chistorra artesanal dorada en horno y ensalada mixta fresca con notas de hierbas de olor.</p>
+</div>
+</div>
+<!-- 4.3 CALZONES Y PIZZA ALTERNATIVA -->
+<div class="menu-content space-y-4 hidden" id="content-calzones">
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Calzone de Quesos</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$350</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Relleno abundante de salsa de tomate, mozzarella, queso gouda, provolone ahumado, parmesano, queso de cabra y queso azul sellado al horno.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Calzone de Jamón de Pierna</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$345</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Masa inflada al fuego con jamón artesanal de pierna natural, salsa pomodoro y capas generosas de queso mozzarella y parmesano.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Panuozzo de Roast Beef</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$300</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Masa de pizza horneada y abierta como bocata campesina, queso gratinado, roast beef tierno, mix de lechugas y parmesano reggiano.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Mortazza de Jamón Serrano</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$300</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Masa doblada por la mitad rellena de quesos fundentes, salsa de tomate, jamón serrano, láminas finas de manzana fresca y arúgula.</p>
+</div>
+<div class="pb-2">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Calzone Blanco de Hongos</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$345</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Crema suave de ajo, gouda fundente, queso provolone y variedad de hongos salteados con hierbas de huerto.</p>
+</div>
+</div>
+<!-- 4.4 CARNES ANGUS AL HORNO DE LEÑA -->
+<div class="menu-content space-y-4 hidden" id="content-carnes">
+<div class="p-3 bg-surface rounded-lg border border-outline-variant/30 mb-2">
+<span class="text-[10px] font-bold text-secondary uppercase tracking-widest block mb-0.5">Horno Ismael · Brasa Directa</span>
+<p class="text-xs text-on-surface-variant">Todas nuestras carnes provienen de ganado selecto Raza Angus, cocinadas pacientemente al calor de la leña y servidas con pan de masa madre y salsa de ajo y chile verde.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Ribeye Angus (350g)</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$450</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Corte de marmoleo superior sellado a fuego vivo, acompañado de pan recién horneado, salsa emulsionada de ajo y chile verde tatemado.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">T-Bone Angus (400g)</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$420</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">La perfecta combinación de lomo y filete al hueso asado con maderas nobles y sazonado con sal de grano de la costa oaxaqueña.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">New York Angus (350g)</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$400</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Corte firme y jugoso con corteza sellada al rescoldo de encino. Incluye hogaza rústica de masa madre.</p>
+</div>
+<div class="pb-2">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Arrachera Angus (250g)</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$380</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Marinado sutil de hierbas y cítricos, suave textura y cocción precisa al horno de brasa con guarnición de la casa.</p>
+</div>
+</div>
+<!-- 4.5 PASTAS DE LA CASA -->
+<div class="menu-content space-y-4 hidden" id="content-pastas">
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Pasta con Camarón</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$250</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Pasta fresca salteada con camarones del Pacífico, emulsión ligera de mantequilla y vino blanco, tomates confitados y perejil.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Lasaña Rústica Tradicional</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$290</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Láminas de pasta fresca al huevo, ragú cocinado durante 6 horas a fuego lento en horno María, bechamel cremosa y gratín dorado de leña.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Pasta con Hongos</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$240</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Selección de setas silvestres y champiñones al ajillo, vino blanco, toque de crema reducida y parmesano madurado.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Pasta Boloñesa Clásica</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$240</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Ragú de carne cocinada lentamente con verduras aromáticas, tomate pomodoro maduro, vino tinto y queso pecorino.</p>
+</div>
+<div class="pb-2">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Pasta Arrabbiata</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$230</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Salsa pomodoro picante elaborada con aceite infusionado en guindillas secas, ajo dorado y albahaca fresca de huerto.</p>
+</div>
+</div>
+<!-- 4.6 ENTRADAS & TOASTS -->
+<div class="menu-content space-y-4 hidden" id="content-toasts">
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Pan de Ajo Rústico</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$230</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Masa delgada y crujiente recién horneada con crema de ajo rostizado, queso de cabra y aceite de oliva.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Toast de Quesos en Hogaza</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$180</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Dos rebanadas de pan campesino tostado, crema de ajo, mezcla de mozzarella, gouda, provolone, parmesano, cabra y azul con ensalada.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Toast de Hongos al Ajillo</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$160</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Hogaza tostada al horno, mayonesa de chintextle oaxaqueño, mix de quesos fundidos y hongos salteados al ajillo.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Toast de la Casa</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$180</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Hogaza rústica, pesto de albahaca fresca, pechuga deshebrada, hongos al ajillo y hojas verdes crujientes.</p>
+</div>
+<div class="pb-2">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Papas con Queso Fundido</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$180</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Bowl de pan de masa madre relleno de papas rústicas horneadas y gratinadas con abundante mozzarella y queso gouda.</p>
+</div>
+</div>
+<!-- 4.7 BEBIDAS, COCTELERÍA & VINOS -->
+<div class="menu-content space-y-4 hidden" id="content-bebidas">
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Cócteles de Autor con Mezcal</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$160</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Destilados ancestrales de agave oaxaqueño, cítricos frescos, reducción de jamaica, hierbas de jardín y romero tatemado al horno.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Vitis Nostra Montepulciano d'Abruzzo</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$680 <span class="text-xs text-on-surface-variant font-normal">/ botella</span></span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Vino tinto italiano DOC con notas profundas de frutos rojos maduros, especias y madera sutil. Perfecto para cortes y pastas.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Vitis Nostra Soave DOC</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$640 <span class="text-xs text-on-surface-variant font-normal">/ botella</span></span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Vino blanco fresco de Italia con notas minerales, acidez vibrante y toques florales. Ideal para pizzas blancas y mariscos.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-3">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Mezcal Espadín / Tobalá Artesanal</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$120 - $160</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Servido en jícara con sales de chile de árbol y rodajas de naranja criolla de la región.</p>
+</div>
+<div class="pb-2">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline-sm text-lg text-on-surface">Cheesecake de Maracuyá de la Costa</h4>
+<span class="font-body-md font-semibold text-sm text-on-surface">$145</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Horneado diariamente en horno María con compota brillante y ácida de maracuyá costeño sobre base rústica de galleta.</p>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/40 text-center">
+<p class="text-[11px] text-on-surface-variant/70 italic">
+          * Todos nuestros precios incluyen IVA. En caso de alguna alergia, por favor notifíquelo a nuestro personal.
+        </p>
+</div>
+</section>
+<!-- 5. GALERÍA FOTOGRÁFICA MÓVIL PROFESIONAL: EL ARTE DEL FUEGO -->
+<section class="px-5 py-8" id="galeria-fuego">
+<div class="mb-5 text-center">
+<span class="text-[10px] font-bold tracking-widest text-secondary uppercase block mb-1">Mosaico Visual</span>
+<h2 class="font-headline-lg-mobile text-3xl font-normal text-on-surface">El Arte del Fuego</h2>
+<p class="font-headline-sm italic text-xs text-on-surface-variant mt-1">Platos vivos, leña crujiente y momentos en torno a los tres hornos.</p>
+</div>
+<!-- Grid fotográfico espacioso de 2 columnas -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Foto 1: Pizza Napolitana Arúgula -->
+<div class="rounded-xl overflow-hidden bg-surface-container shadow-sm aspect-square relative group">
+<img alt="Pizza Napolitana con arúgula fresca y tomates cherry" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVRi47xm3efNvBrm0S937EsWyojc0LkW2xxQxVFO4vhw89Mr-Y-zTLcW3Icax9J17HNMxnino05jTtk8Z3Lnehko6bkB0SPL-N7grW7_ZxUtY_sNQSM4PiGVmSdtDTZDfC3dHuezdAmwRyB2bhzGB6wysjMleIvyyjLWrs8QtQP1Za8DY-CE3vhWl0XaHXHYarWVgtXSbBUA8NOJQANBF0xdCxA0q3iMWzXa5s5q3pCDm_Y3xR_-DDKlHoN9EMtJM2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-2.5">
+<span class="text-[11px] font-medium text-white">Pizza Napolitana</span>
+</div>
+</div>
+<!-- Foto 2: Lasaña Rústica -->
+<div class="rounded-xl overflow-hidden bg-surface-container shadow-sm aspect-square relative group">
+<img alt="Lasaña horneada a leña con ragú tradicional" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0NFbBDl5VHkBa36P_NsMSzSTSEHbEtrbSVs2db9kodJKtjWf5vqL9boTPUs5y6r80vXbgm42k3Tq33zvOUuuphrgAWzbA8mdzIdOb32ImDsKHx2J9F1ZUZaUxBLCIvr2xa9lQ5V9uPmTNTSyEIsa6AkWsjEOSlWBRvVndU4MGahBAAc3ih-pOhw75gs2mH8o-5qOgCd-uC0PraW94iM8WJPXYi4rvNz6g2kHjEkR29ALFS-c-PvU-21KbmIPn55RE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-2.5">
+<span class="text-[11px] font-medium text-white">Lasaña Rústica</span>
+</div>
+</div>
+<!-- Foto 3: Calzone Dorado Gigante -->
+<div class="col-span-2 rounded-xl overflow-hidden bg-surface-container shadow-sm aspect-[16/10] relative group">
+<img alt="Calzone artesanal dorado inflado en horno de piedra" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdJq7g8oggtO5e-m0INwoi27MSrtb0-ZKFmA_owAW8tqM_kPTnG5CPVuh99omdC_SQPeOalOd6w0DkDYO3m6905xhwKUrBxtxGutw-4TUXdkLrEEDtTIqjnWECQ3g6PGLe6ghgdennucti6z45yaXk2UgaW0xjqvdvPRorln5TJyEzyAwmRzYCLBjVnXUK1_k4zRmFSUXkIYbg6a2uIthuYWFkbw8okvkvjNN9rwqGV5Bknx9t5bz3GxelzlXyMioU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
+<span class="text-xs font-medium text-white">Calzone Gigante de Quesos al Horno Hallel</span>
+</div>
+</div>
+<!-- Foto 4: Corte Angus a la Brasa -->
+<div class="rounded-xl overflow-hidden bg-surface-container shadow-sm aspect-square relative group">
+<img alt="Corte Angus sellado a las brasas con pan campesino" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnw3QcreVgJfcK38QaE98gciybzGJOGsJs2jTJKCrjAYTbwBBec7xtKvf5rYEp5AOaJfKjfv1KJ8T-dfuZaybGco9xZ20D_uO-UNeUCEqyAj1NmSTU3Ganx8r3Fg5rWHhN2p8h9stUJCb3cgyeaDCv5XxenYQOMgdM9kUZ9sHy04BaNzF8KLTRS04iIb7fWVKCJZKJs8EMZW8Xke1BVUMB5T3Xfp0oWEHfbivXi23Bnp83EG4e9P12la5t-GmnCY3h"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-2.5">
+<span class="text-[11px] font-medium text-white">Corte Angus en Brasa</span>
+</div>
+</div>
+<!-- Foto 5: Cheesecake de Maracuyá -->
+<div class="rounded-xl overflow-hidden bg-surface-container shadow-sm aspect-square relative group">
+<img alt="Rebanada de cheesecake de maracuyá de la costa" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP8enzQxzOPqtxLVyrSQOdRRsO2EWBSeN-FjDrA4l2VGga4sKWZSmC_nhinOraoCQm6LNZpFD_BqP2hkicqobA27VHAEncN9PS8-cO5krIC4Yar9WxpB7jJ9_n3cKzEXIqNPEW3HP1zlcmfbqpM97QaG-jBzcyXMOMIFEoIL-axPDoFKs5doN5lhLk2VlOTCr69dkx7KKfXy7SLbWDhpQJZv4HS8-wl_Cd9kd_-f2sNfBbWwnqLX4pMR-AbUKixuR4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-2.5">
+<span class="text-[11px] font-medium text-white">Cheesecake de Maracuyá</span>
+</div>
+</div>
+<!-- Foto 6: Cóctel de Autor Rojo -->
+<div class="rounded-xl overflow-hidden bg-surface-container shadow-sm aspect-square relative group">
+<img alt="Cóctel de autor con mezcal artesanal" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNeYzktL4oQA94DoBgl8GNVdmNUX_V1adHCN30yhZ9faBg9fOVyl2CA8yi3DpIaPN07-38fLyL7LxMeHpd7QNhROAP7vRBaczwHxSz5D5UNR-rF8oBrD3GNJ6O09_s8CE-bB62QM97WLBlOm7Lri1uF8rDOm5_5PP9tQRL3TyavX_trZJHnGsKzlJ4IqXeG54hzXApNpWNE74L6Q6u1XKUNIHaujRtXxxXZuGv0dBeLFdKnEaEJ09E0djgAFsAQd_D"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-2.5">
+<span class="text-[11px] font-medium text-white">Cóctel de Autor Rojo</span>
+</div>
+</div>
+<!-- Foto 7: Cóctel Verde con Flor -->
+<div class="rounded-xl overflow-hidden bg-surface-container shadow-sm aspect-square relative group">
+<img alt="Cóctel botánico verde con flor comestible" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCf-3eOMZFgiHB_M4yE4fBHNOAZXZ9dw5SjGqP0oqKYQz5i8uPNGVhi5utoYy_r5o7JRPM2Ki_NNtdO_t0OGMTB0emPfcAoMWSFOnwO5_0FFai4cW2gb9Q3rQ3F_cbdU9XYlJdAYx4dWXbwSapBPPcLjOnyWEdt9ITNjGjMag4Gko-Aa8_hVkwSEyoTDQW2-EuWiLHxEvDMpFOBTMPh4m4nzsS8h_a0mdqaNJuGeofHd9bZl3Ke6k1-FSub0RFlw-B"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-2.5">
+<span class="text-[11px] font-medium text-white">Cóctel Botánico Verde</span>
+</div>
+</div>
+<!-- Foto 8: Cava de Vinos Italianos -->
+<div class="col-span-2 rounded-xl overflow-hidden bg-surface-container shadow-sm aspect-[16/10] relative group">
+<img alt="Botellas de vino Vitis Nostra Soave y Montepulciano d'Abruzzo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmTTq2BEKoMWODJSpV_eBTG1kivOHsb_eAMfS0HBOelNZUb1_OFRZRCjgh-H-G7HPs56vzMOjU_79Y8cnHF8d_FGWl77Tphe3il__ezxB2PVxKC1Q_Ja2BZfhBQgG6TskFXv4wO5niKQ-UZRjVVP1eZRPcxHgf0bl8sf8wqW-BmYlZju9Tq-GArg5B3tJv17nnizw4n-eiq2IWWt2Y8Gn5A86pHJSjq7Hevxy0R9z0eaBYjUCID42vbWtxnLuAlOH8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
+<span class="text-xs font-medium text-white">Selección de Vinos de Italia &amp; Cava de Casa</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. LOS CHEFS FUNDADORES -->
+<section class="px-5 py-8 bg-surface-container-high/40 border-t border-outline-variant/30">
+<div class="w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container mb-4 shadow-sm">
+<img alt="Chefs fundadores Jazmín Sibaja y Miguel Arjona" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGEb740R94RKWnGFxVOGOwmgYQCzJmo1uWJVjT5b2kCbpsofayevKBPewaZrn6A7P7_jWg6YfKXjAOFc-vwK0ZsDj0C7ReMP7zDGnrtbiDBr0-HBAqLRc1_jXtoeYihlF_Ir9h2A2cOeiT6A3kGTdv3Wf04oVo0SBWQBmKDslVRWIx1XZY34rPQH_ioeGQ1NfXdaaMwl9LXlmRY1Keg703_lQXwsVhHurJYot1mJmsoMJxzvFSI117ltJ4NFtGNDIE"/>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-[10px] uppercase font-bold tracking-widest text-secondary">Al Frente de los Hornos</span>
+<h2 class="font-headline-lg-mobile text-2xl font-normal text-on-surface">Jazmín Sibaja &amp; Miguel Arjona</h2>
+<blockquote class="my-2 p-3.5 bg-surface border-l-2 border-secondary rounded-r-lg">
+<p class="font-headline-sm italic text-sm text-on-surface leading-snug">
+            “No aceleramos ningún proceso. El fuego no negocia con la prisa.”
+          </p>
+</blockquote>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+          Unidos por la devoción a las fermentaciones lentas y el calor de leña, Jazmín y Miguel concibieron este espacio como un secreto gastronómico donde cada servicio rinde homenaje a la pureza del trigo, los ingredientes oaxaqueños y el fuego continuo.
+        </p>
+</div>
+</section>
+<!-- 7. DINÁMICA DE ACCESO, TIMBRE & HORARIOS -->
+<section class="px-5 py-8 space-y-4" id="llegada">
+<div>
+<span class="text-[10px] uppercase font-bold tracking-widest text-secondary block mb-1">Comedor a Puerta Cerrada</span>
+<h2 class="font-headline-lg-mobile text-3xl font-normal text-on-surface">Cómo ingresar</h2>
+<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+          Para conservar un ambiente tranquilo e íntimo, operamos a puerta cerrada en el Centro Histórico.
+        </p>
+</div>
+<!-- Tarjeta Timbre en Fachada -->
+<div class="bg-surface-container p-4 rounded-xl border border-outline-variant/30 flex items-center gap-3.5">
+<div class="w-20 h-24 rounded-lg overflow-hidden shrink-0 shadow-sm">
+<img alt="Timbre exterior en la fachada de Colón 612" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIlKkDnrFatv_FgCOiM3ljGF0no2-yc8Om7VqfmFzDCMKfJqkyD66egsfyb1PFTlMhrAjxoMyDawElvah51QUUdSmTw1aSGFNP_oEdOViENBVqOOUXc9yPVMB2IInvWnIoplrcmiaxllVDxt7yFHCKBaPJ-6X_EzG4clspMnpAee3eCJedY3xXbxV8F0kwgmqszpfJboHyxIZtur4_M4Ghp85hnwV6A9gI7JFdDHQjSBIU0DM3l9uNiGhc3-S3hoeS"/>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] font-bold uppercase tracking-wider text-secondary">Dinámica de bienvenida</span>
+<h3 class="font-headline-sm text-base text-on-surface">Toca el timbre al llegar</h3>
+<p class="text-[11px] text-on-surface-variant leading-tight mt-1">
+            Encuentra nuestra placa metálica en la fachada de Colón 612. Toca el timbre o escribe por WhatsApp y te abriremos de inmediato al patio.
+          </p>
+</div>
+</div>
+<!-- Botón directo WhatsApp -->
+<a class="w-full py-3.5 bg-primary text-on-primary rounded-xl text-xs font-semibold uppercase tracking-wider text-center flex items-center justify-center gap-2 hover:bg-secondary transition-colors shadow-sm" href="https://wa.me/529515168820?text=Hola,%20estoy%20afuera%20de%20El%20Toro%20y%20La%20Luna" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg">chat</span>
+<span>Avisar llegada vía WhatsApp (+52 951 516 8820)</span>
+</a>
+<!-- Horarios y Ubicación -->
+<div class="bg-surface-container rounded-xl p-4 border border-outline-variant/30 space-y-3">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5">location_on</span>
+<div>
+<h4 class="font-semibold text-xs text-on-surface">Ubicación</h4>
+<p class="text-xs text-on-surface-variant">Colón 612-interior, Centro Histórico, Oaxaca de Juárez, Oax.</p>
+</div>
+</div>
+<div class="border-t border-outline-variant/20 pt-3">
+<div class="flex items-center gap-2 text-on-surface mb-2">
+<span class="material-symbols-outlined text-secondary text-base">schedule</span>
+<h4 class="font-semibold text-xs">Horarios de Servicio</h4>
+</div>
+<div class="space-y-1 text-xs">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Jueves a Lunes:</span>
+<span class="font-medium text-on-surface">3:00 p.m. – 10:00 p.m.</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Domingos:</span>
+<span class="font-medium text-on-surface">3:00 p.m. – 9:00 p.m.</span>
+</div>
+<div class="flex justify-between text-secondary">
+<span>Miércoles:</span>
+<span class="font-semibold uppercase text-[11px]">Cerrado (Reposo de masa)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. PIE DE PÁGINA EDITORIAL -->
+<footer class="px-5 pt-8 pb-10 flex flex-col items-center text-center gap-3 border-t border-outline-variant/30 mt-6">
+<img alt="Logo El Toro y La Luna" class="w-16 h-16 object-contain opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgzeHqASpzMkrNuoa6g7jwsSVl_cZzPU94ohnS4eXkeayS-YcnvjGraLM6QA2DNJDx_n4l70HDPpsPhT4tolkZA7GX-1Ws9RVBSVqNPHfwZHApnaqbihYvGY6yZB-6D_1-nVnln2Fg9t3ESmRU4DZvaxiGeTnfyYbf97LeOyWyypErSPTJS9ou5tiOe9GPubnS9Z7_OOCFMmJhHSxvlxGIt5_w5nzPLV8B0DCO9fiesdmnVul6qn0u8d7B4BbEORTf"/>
+<h3 class="font-headline-sm text-xl text-on-surface font-normal">El Toro y La Luna</h3>
+<p class="font-headline-sm italic text-xs text-on-surface-variant max-w-xs">
+        Masa madre, leña de encino y tradición de fuego lento en Oaxaca.
+      </p>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant/60 mt-2">
+        Caputo Cup México 2025 · Rumbo a Nápoles
+      </span>
+</footer>
+</main>
+<!-- BARRA DE NAVEGACIÓN MÓVIL INFERIOR -->
+<nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/95 backdrop-blur-lg border-t border-outline-variant/30">
+<div class="flex justify-around items-center h-14 max-w-lg mx-auto px-2">
+<a class="flex flex-col items-center justify-center flex-1 py-1 text-secondary" href="#">
+<span class="material-symbols-outlined text-[20px]">local_fire_department</span>
+<span class="text-[9px] uppercase tracking-wider font-semibold mt-0.5">Origen</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 py-1 text-on-surface-variant hover:text-secondary transition-colors" href="#carta-editorial">
+<span class="material-symbols-outlined text-[20px]">restaurant_menu</span>
+<span class="text-[9px] uppercase tracking-wider font-medium mt-0.5">Carta</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 py-1 text-on-surface-variant hover:text-secondary transition-colors" href="#galeria-fuego">
+<span class="material-symbols-outlined text-[20px]">photo_library</span>
+<span class="text-[9px] uppercase tracking-wider font-medium mt-0.5">Galería</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 py-1 text-on-surface-variant hover:text-secondary transition-colors" href="#llegada">
+<span class="material-symbols-outlined text-[20px]">door_front</span>
+<span class="text-[9px] uppercase tracking-wider font-medium mt-0.5">Acceso</span>
+</a>
+<a class="flex flex-col items-center justify-center flex-1 py-1 text-on-surface-variant hover:text-secondary transition-colors" href="https://wa.me/529515168820?text=Hola,%20quisiera%20reservar%20una%20mesa" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<span class="text-[9px] uppercase tracking-wider font-medium mt-0.5">Mesa</span>
+</a>
+</div>
+</nav>
+<!-- LÓGICA DE INTERACCIÓN LIMPIA PARA PESTAÑAS DEL MENÚ EDITORIAL -->
+<script>
+    function switchTab(categoryId) {
+      // Ocultar todos los contenidos
+      const contents = document.querySelectorAll('.menu-content');
+      contents.forEach(content => content.classList.add('hidden'));
+
+      // Desactivar todos los estilos de botones
+      const tabs = document.querySelectorAll('.menu-tab');
+      tabs.forEach(tab => {
+        tab.classList.remove('bg-primary', 'text-on-primary');
+        tab.classList.add('bg-surface', 'border', 'border-outline-variant/40', 'text-on-surface-variant');
+      });
+
+      // Mostrar el contenido seleccionado
+      const selectedContent = document.getElementById('content-' + categoryId);
+      if (selectedContent) {
+        selectedContent.classList.remove('hidden');
+      }
+
+      // Activar el botón seleccionado
+      const selectedTab = document.getElementById('tab-' + categoryId);
+      if (selectedTab) {
+        selectedTab.classList.remove('bg-surface', 'border', 'border-outline-variant/40', 'text-on-surface-variant');
+        selectedTab.classList.add('bg-primary', 'text-on-primary');
+      }
+    }
+  </script>
+</body></html>
